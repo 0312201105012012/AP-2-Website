@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+<style>
+/* GLOBAL BODY — animated Indonesia gradient */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(120deg, #ff0000, #ffffff, #ff0000);
+    background-size: 300% 300%;
+    animation: merahPutih 12s ease infinite;
+}
+
+@keyframes merahPutih {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* NAVBAR */
+.top-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+}
+
+.top-box a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.top-box a:hover {
+    color: #ffdddd;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+/* PHOTO SECTION */
+.photo-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+
+    /* Make it transparent so animation shows */
+    background: transparent;
+}
+
+.photo-section img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+/* BIO TABLE */
+.bio-table {
+    width: 60%;
+    margin: 30px auto;
+    border-collapse: collapse;
+
+    /* Slightly transparent glass effect */
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+
+    color: white;
+}
+
+.bio-table th, .bio-table td {
+    border: 2px solid #ffffff;
+    padding: 12px 20px;
+    text-align: left;
+}
+
+.bio-table th {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+/* DESKRIPSI DIRI */
+.deskripsi-diri {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.deskripsi-diri h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+</style>
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <div class="top-box">
+        <a href="index.html">Home</a>
+        <a href="soegondo.html">Soegondo</a>
+        <a href="yamin.html">Yamin</a>
+        <a href="djoko.html">Djoko</a>
+    </div>
+
+    <!-- Title -->
+    <div class="title">Student Biography</div>
+
+    <!-- Photos -->
+    <div class="photo-section">
+        <img src="image.png" alt="Sean">
+        <img src="TIK.PNG" alt="Amadeus">
+    </div>
+
+    <!-- Table -->
+    <table class="bio-table">
+        <tr>
+            <th>Name</th>
+            <th>Kelas</th>
+            <th>No. Absen</th>
+        </tr>
+        <tr>
+            <td>Sean Patrick Lukman</td>
+            <td>8B</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>Amadeus Darren Indrawan</td>
+            <td>8B</td>
+            <td>01</td>
+        </tr>
+    </table>
+
+    <!-- Deskripsi Diri -->
+<div class="deskripsi-diri">
+    <h2>Deskripsi Diri</h2>
+    <p><strong>Amadeus Darren Indrawan:</strong> Age: 13, Born: Gading Serpong</p>
+    <p><strong>Sean Patrick Lukman:</strong> Age: 13, Born: Jakarta</p>
+</div>
+
+</body>
+</html>
